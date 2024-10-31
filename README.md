@@ -16,4 +16,4 @@ This repository serves as an educational resource and codebase for statistical m
 The Poisson Distribution is foundational in statistics for modeling discrete events, particularly useful in scenarios where we want to predict the probability of a given number of events happening in a fixed interval (like the number of calls received at a call center or the number of website hits in a minute). This project covers:
 
 - Theory: Key concepts behind the Poisson Distribution, including lambda (λ), expected value, and variance.
-- Code Implementation: Practical coding examples in both R
+- Code Implementation: Practical coding examples in R
