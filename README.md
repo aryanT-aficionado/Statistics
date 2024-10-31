@@ -1,6 +1,6 @@
 # Statistical Models Exploration in R and Python
 
-Welcome to my repository! This project is dedicated to a deep dive into statistical models such as **Poisson**, **Normal**, and other fundamental statistical distributions. The code is written in both **R** and **Python** to provide a dual approach to statistical modeling.
+Welcome to my repository! This project is dedicated to a deep dive into statistical models such as **Poisson**, **Normal**, and other fundamental statistical distributions. The code will be  in both **R** and **Python** to provide a dual approach to statistical modeling.
 
 ## About Me
 I'm currently pursuing a **Master's in Data and Computational Science** with a passion for data analysis, machine learning, and statistical modeling. My background includes a Bachelor’s in Computer Science Engineering, research in precision agriculture, and various data-centric projects. I enjoy working with data, exploring complex statistical concepts, and applying computational methods to derive meaningful results.
