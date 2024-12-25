@@ -48,3 +48,52 @@ Through CLT, we can explore the fascinating transformation of sample means from 
 - **Green (10):** A more defined bell shape starts to emerge.
 - **Blue (30):** Almost there! Resembling the normal distribution.
 - **Gold (50):** The pinnacle of order—an elegant normal curve.
+
+
+### Schrodinger's Cat Theory: A Statistical Exploration
+
+#### 🖼 Description
+This project visualizes **Schrodinger's Cat Theory** through the lens of probability and the **Central Limit Theorem (CLT)**. Using a **Bernoulli distribution** to represent the dual "Alive" and "Dead" states of the cat, we examine how the probabilities evolve with an increasing number of trials.
+
+
+## 📊 Overview
+
+The experiment simulates the concept of **superposition** in quantum mechanics by assigning probabilities to the cat's "Alive" and "Dead" states. As the number of trials increases, the **CLT** ensures that the probabilities converge to normal distributions, illustrating the blending of quantum mechanics with statistical principles.
+
+- **Biased Probability**: The "Alive" state is slightly favored with a probability of 0.53, while the "Dead" state has a probability of 0.47.
+- **Dynamic Trials**: The simulation is run for varying numbers of trials `(50, 100, 250, 500, 800, 1000)` to show how the distribution evolves.
+- **CLT Approximation**: The distributions are approximated using a normal distribution for both states.
+
+
+###### 🎨 Key Highlights:
+
+1. **Bernoulli Trials**
+- Each trial represents a single event where the cat has a 50% chance of being "Alive" (`P = 0.5`) and 50% chance of being "Dead" (`1 - P = 0.5`).
+- Simulated using the `rbinom` function in R.
+
+2. **Central Limit Theorem**
+- For a given number of trials, the sample means for "Alive" and "Dead" states are computed.
+- The **CLT** approximates these sample means as normally distributed with:
+  - Mean: Equal to the probability of the respective state.
+  - Standard Deviation: Calculated as \( \sqrt{\frac{P \cdot (1 - P)}{n}} \), where \( n \) is the number of trials.
+
+3. **Visual Representation**
+- **Probability Density Functions (PDFs)** for "Alive" and "Dead" states are plotted for varying trial sizes (`n = 50, 100, 250, 500, 800, 1000`).
+- The PDF shapes showcase the transformation of probabilities into normal distributions as trials increase.
+
+---
+
+## 🎨 Visualization
+
+The plot includes:
+- **X-Axis:** The continuum of "Alive" and "Dead" states.
+- **Y-Axis:** Probability density values for each state.
+- **Facets:** Separate panels for each trial size, showing the impact of increasing trials.
+- **Color Coding:** 
+  - **Red (Alive):** Represents the probability density for the "Alive" state.
+  - **Blue (Dead):** Represents the probability density for the "Dead" state.
+
+The visualization provides a conceptual demonstration of:
+
+- The effect of bias in probabilistic systems.
+- How increasing sample size reduces variability and enhances precision in statistical estimates.
