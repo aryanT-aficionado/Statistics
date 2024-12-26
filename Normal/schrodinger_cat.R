@@ -4,7 +4,7 @@ library(dplyr)
 
 # Parameters
 n <- c(50, 100, 250, 500, 800, 1000) # Different numbers of trials
-alive <- 0.5  # Probability of "alive" state
+alive <- 0.53  # Probability of "alive" state
 dead <- 1 - alive
 
 # Initialize an empty data frame for storing results
