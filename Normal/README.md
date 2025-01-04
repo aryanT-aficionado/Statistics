@@ -29,6 +29,8 @@ The 3D visualization explores the `joint density of two independent normal distr
 
 The graph highlights the independence of variables in a normal distribution while turning statistical concepts into a festive 3D display. Think of it as a colorful holiday tree in the world of data visualization! 🎄✨
 
+---
+
 ### 3️⃣ Central Limit Theorem (CLT) Visualization
 
 #### 🖼 Description
@@ -49,6 +51,7 @@ Through CLT, we can explore the fascinating transformation of sample means from 
 - **Blue (30):** Almost there! Resembling the normal distribution.
 - **Gold (50):** The pinnacle of order—an elegant normal curve.
 
+---
 
 ### Schrodinger's Cat Theory: A Statistical Exploration
 
@@ -97,3 +100,5 @@ The visualization provides a conceptual demonstration of:
 
 - The effect of bias in probabilistic systems.
 - How increasing sample size reduces variability and enhances precision in statistical estimates.
+
+--- 
