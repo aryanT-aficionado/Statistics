@@ -6,22 +6,22 @@ library(dplyr)
 set.seed(123)
 
 # Generate Exponential population distribution data
-popu <- rexp(10000)  
+popu = rexp(10000)  
 
 # Function to calculate sample means for CLT demonstration
-clt <- function(sample_size, n) {
+clt = function(sample_size, n) {
   replicate(n, mean(sample(popu, size = sample_size, replace = TRUE)))
 }
 
 # Define sample sizes and generate CLT data
-sample_sizes <- c(2, 5, 8, 10, 30, 50)
-clt_data <- data.frame(
+sample_sizes = c(2, 5, 8, 10, 30, 50)
+clt_data = data.frame(
   sample = rep(sample_sizes, each = 1000),
   sample_mean = unlist(lapply(sample_sizes, clt, n = 1000))
 )
 
 # Define custom colors for sample sizes
-colors <- c(
+colors = c(
   "2" = "#F91EB0",   # Red
   "5" = "#ED7B00",   # Orange
   "8" = "#F5DBCB",   # Yellow

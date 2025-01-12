@@ -102,3 +102,28 @@ The visualization provides a conceptual demonstration of:
 - How increasing sample size reduces variability and enhances precision in statistical estimates.
 
 --- 
+
+### Central Limit Theorem: Non-normalcy to normalcy
+#### 🖼 Description
+This project demonstrates the Central Limit Theorem (CLT) in action using R. It simulates sampling from a non-normal population (Poisson distribution) and illustrates how the distribution of sample means approaches normality as the sample size increases. This visualization highlights the remarkable transformation from a skewed population distribution to a bell-shaped curve of sample means, showcasing one of the foundational concepts in statistics.
+
+#### 📊 Overview
+1. Non-Normal Population: A population generated using a Poisson distribution to represent non-normal data.
+2. Sampling Simulation: Random samples are drawn repeatedly, and their means are calculated.
+3. Central Limit Theorem: The distribution of these sample means converges to a normal distribution, regardless of the original population shape.
+
+###### 🎨 Key Highlights:
+1. Population vs. Sample Means Visualization:
+
+    - Overlays the density plot of the original population and the distribution of sample means.
+    - Clearly illustrates the transition from non-normality to normality.
+
+2. Customizable Parameters:
+
+    - Easily modify sample size (sample_size) and the number of samples (num_samples) to explore different scenarios.
+    - Elegant Plot Design:
+
+3. Clean and minimalistic theme (theme_minimal()).
+    - Custom legend positioning and styling for better aesthetics.
+
+--- 
