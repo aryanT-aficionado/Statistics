@@ -7,17 +7,17 @@ set.seed(123)
 population = rpois(10000, lambda = 2)  # Exponential distribution
 
 # Function to simulate sampling and calculate means
-simulate_clt <- function(population, sample_size, num_samples) {
-  sample_means <- replicate(num_samples, mean(sample(population, sample_size)))
+simulate_clt = function(population, sample_size, num_samples) {
+  sample_means = replicate(num_samples, mean(sample(population, sample_size)))
   data.frame(mean = sample_means)
 }
 
 # Parameters for simulation
-sample_size <- 30       # Size of each sample
-num_samples <- 1000     # Number of samples to draw
+sample_size = 30       # Size of each sample
+num_samples = 1000     # Number of samples to draw
 
 # Simulate sample means
-sample_means_data <- simulate_clt(population, sample_size, num_samples)
+sample_means_data = simulate_clt(population, sample_size, num_samples)
 
 # Plot the original population and sample means
 ggplot() +
