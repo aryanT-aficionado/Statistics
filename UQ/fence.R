@@ -17,7 +17,7 @@ fencer_ode = function(time, state, params) {
 }
 
 # Parameters 🤔 (ground truth for any model)
-true_params = c(alpha = 1.1, beta = 0.2, gamma = 0.5, delta = 0.1)
+true_params = c(alpha = 1.1, beta = 0.3, gamma = 0.5, delta = 0.2)
 initial_state = c(A = 10, P = 5)  # Initial attack/parry intensity
 times = seq(0, 10, by = 0.1)
 
@@ -29,8 +29,8 @@ ode_sol = ode(y = initial_state, times = times, func = fencer_ode, parms = true_
 # To simulate real-world observations, noise is necessary 🤷
 observed_data = ode_sol |>
   mutate(
-    A_obs = A + rnorm(n(), 0, 1),  # Noisy attack intensity
-    P_obs = P + rnorm(n(), 0, 1)   # Noisy parry intensity
+    A_obs = A + rnorm(n(), 0, 3),  # Noisy attack intensity
+    P_obs = P + rnorm(n(), 0, 2)   # Noisy parry intensity
   )
 
 # Bayesian model to estimate ODE parameters with uncertainty 😶
